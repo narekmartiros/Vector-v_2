@@ -1,12 +1,13 @@
-
+#ifndef VECTOR_H
+#define VECTOR_H
 #include<iostream>
 template<class T>
-class Vector{
 
+class Vector{
 public:
 
 Vector();
-~Vector();
+virtual ~Vector();
 Vector(const Vector<T>& vec);
 Vector& operator=(const Vector<T>& vec);
 const T& operator[](int index)const;
@@ -23,3 +24,4 @@ int m_cap;
 T* m_pt;
 
 };
+#endif

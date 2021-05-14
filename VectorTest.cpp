@@ -1,6 +1,8 @@
-#include "Vector.cpp"
+//#include "Vector.cpp"
+#include "Stack.hpp"
 //#include <iostream>
 #include <string>
+
 
 template<class T>
 void display_vector(Vector<T> &vec);
@@ -10,6 +12,9 @@ int main(){
 Vector<int> v;
 Vector<std::string> v1;
 Vector<int> v2;
+Stack<int> st;
+st.push(5);
+
 
 for(int i=0;i<10;++i){
     v.push_back(i);
@@ -33,7 +38,7 @@ display_vector(v3);
 v2.push_front(99);
 display_vector(v2);
 
-v2.remove(0);
+v2.remove(2);
 display_vector(v2);
 
 return 0;
